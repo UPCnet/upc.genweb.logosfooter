@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="upc.gebweb.logosfooter">
+
+    <include package="plone.app.contentmenu" />
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <browser:resource
+        name="logosfooter_icon.gif"
+        image="logosfooter_icon.gif"
+        />
+</configure>

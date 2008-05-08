@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="upc.genweblogosfooter">
+
+    <!-- configure your content components here -->
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <class class=".logoscontainer.Logoscontainer">
+        <require
+            permission="zope2.View"
+            interface="..interfaces.ILogoscontainer"
+            />
+        <require
+            permission="cmf.ModifyPortalContent"
+            set_schema="..interfaces.ILogoscontainer"
+            />
+    </class>
+
+    <class class=".logosfooter.Logosfooter">
+        <require
+            permission="zope2.View"
+            interface="..interfaces.ILogosfooter"
+            />
+        <require
+            permission="cmf.ModifyPortalContent"
+            set_schema="..interfaces.ILogosfooter"
+            />
+    </class>
+
+</configure>

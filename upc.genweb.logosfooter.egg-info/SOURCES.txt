@@ -1,0 +1,12 @@
+README.txt
+setup.cfg
+setup.py
+upc/__init__.py
+upc.genweb.logosfooter.egg-info/PKG-INFO
+upc.genweb.logosfooter.egg-info/SOURCES.txt
+upc.genweb.logosfooter.egg-info/dependency_links.txt
+upc.genweb.logosfooter.egg-info/entry_points.txt
+upc.genweb.logosfooter.egg-info/namespace_packages.txt
+upc.genweb.logosfooter.egg-info/not-zip-safe
+upc.genweb.logosfooter.egg-info/requires.txt
+upc.genweb.logosfooter.egg-info/top_level.txt
