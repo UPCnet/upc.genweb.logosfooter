@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="upc.genweb.logosfooter.various"
+               version="20080811-01"
+               handler="upc.genweb.logosfooter.setuphandlers.setupVarious"
+               title="genWeb UPC LogosFooter: miscellaneous import steps">
+    <dependency step="types" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+ </import-step>  
+</import-steps>

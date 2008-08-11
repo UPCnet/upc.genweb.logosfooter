@@ -20,20 +20,13 @@ from upc.genweb.logosfooter.config import PROJECTNAME
 
 schema = Schema((
 
-    IntegerField(
-        name='numbanners',
-        widget=IntegerField._properties['widget'](
-            label='Numbanners',
-            label_msgid='siteBanners_label_numbanners',
-            i18n_domain='siteBanners',
-        ),
-    ),
 ),
 )
 
 LogosContainer_schema = getattr(ATFolder, 'schema', Schema(())).copy() + \
     schema.copy()
-    
+
+
 class Logoscontainer(ATFolder):
     """
     """
