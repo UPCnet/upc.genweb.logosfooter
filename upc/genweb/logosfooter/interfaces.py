@@ -8,10 +8,10 @@ from upc.genweb.logosfooter import logosfooterMessageFactory as _
 
 # -*- extra stuff goes here -*-
 
-class ILogoscontainer(Interface):
+class ILogos_Container(Interface):
     """A Logos Container
     """
 
-class ILogosfooter(Interface):
+class ILogos_Footer(Interface):
     """A Logos Container
     """

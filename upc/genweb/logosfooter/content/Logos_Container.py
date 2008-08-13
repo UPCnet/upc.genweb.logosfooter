@@ -15,7 +15,7 @@ from AccessControl import ClassSecurityInfo
 from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 from Products.ATContentTypes.content.folder import ATFolder
 
-from upc.genweb.logosfooter.interfaces import ILogoscontainer
+from upc.genweb.logosfooter.interfaces import ILogos_Container
 from upc.genweb.logosfooter.config import PROJECTNAME
 
 schema = Schema((
@@ -27,15 +27,15 @@ LogosContainer_schema = getattr(ATFolder, 'schema', Schema(())).copy() + \
     schema.copy()
 
 
-class Logoscontainer(ATFolder):
+class Logos_Container(ATFolder):
     """
     """
     security = ClassSecurityInfo()
-    implements(ILogoscontainer)
+    implements(ILogos_Container)
 
-    meta_type = 'Logos Container'
+    meta_type = 'Logos_Container'
     _at_rename_after_creation = True
 
     schema = LogosContainer_schema
 
-registerType(Logoscontainer, PROJECTNAME)
+registerType(Logos_Container, PROJECTNAME)

@@ -8,10 +8,10 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
 
- <object name="Logos Container"
+ <object name="Logos_Container"
          meta_type="Factory-based Type Information with dynamic views"/>
 
- <object name="Logos Footer"
+ <object name="Logos_Footer"
          meta_type="Factory-based Type Information with dynamic views"/>
          
 </object>

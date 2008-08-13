@@ -6,9 +6,9 @@
  <property name="title">Logos Footer</property>
  <property name="description"></property>
  <property name="content_icon">++resource++logosfooter_icon.gif</property>
- <property name="content_meta_type">Logos Footer</property>
+ <property name="content_meta_type">Logos_Footer</property>
  <property name="product">upc.genweb.logosfooter</property>
- <property name="factory">addLogosfooter</property>
+ <property name="factory">addLogos_Footer</property>
  <property name="immediate_view">base_view</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">False</property>

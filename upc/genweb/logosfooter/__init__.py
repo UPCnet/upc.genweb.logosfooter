@@ -31,7 +31,7 @@ def initialize(context):
     # course, even if we import the module several times, it is only run
     # once.
 
-    from content import logoscontainer, logosfooter
+    import content
 
     content_types, constructors, ftis = atapi.process_types(
         atapi.listTypes(config.PROJECTNAME),

@@ -1,31 +1,27 @@
 <?xml version="1.0"?>
-<object name="Logos Container"
+<object name="Logos_Container"
    meta_type="Factory-based Type Information with dynamic views"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title">Logos Container</property>
  <property name="description"></property>
  <property name="content_icon">++resource++logosfooter_icon.gif</property>
- <property name="content_meta_type">Logos Container</property>
+ <property name="content_meta_type">Logos_Container</property>
  <property name="product">upc.genweb.logosfooter</property>
- <property name="factory">addLogoscontainer</property>
- 
+ <property name="factory">addLogos_Container</property>
  <property name="immediate_view">atct_edit</property>
- 
- <property name="global_allow">False</property>
+ <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
-  <element value="Logos Footer"/>
+  <element value="Logos_Footer"/>
  </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">folder_listing</property>
- 
  <property name="view_methods">
   <element value="folder_summary_view"/>
   <element value="folder_tabular_view"/>
   <element value="atct_album_view"/>
   <element value="folder_listing"/>
  </property>
- 
  <property name="default_view_fallback">False</property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="base_edit"/>

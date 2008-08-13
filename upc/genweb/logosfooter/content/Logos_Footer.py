@@ -12,7 +12,7 @@ from Products.Archetypes.interfaces import IObjectPostValidation
 from Products.Archetypes.atapi import *
 from AccessControl import ClassSecurityInfo
 
-from upc.genweb.logosfooter.interfaces import ILogosfooter
+from upc.genweb.logosfooter.interfaces import ILogos_Footer
 from upc.genweb.logosfooter.config import PROJECTNAME
 
 from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
@@ -51,15 +51,15 @@ logos_schema = BaseSchema.copy() + \
     schema.copy()
 
 
-class Logosfooter(BaseContent, BrowserDefaultMixin):
+class Logos_Footer(BaseContent, BrowserDefaultMixin):
     """
     """
     security = ClassSecurityInfo()
-    implements(ILogosfooter)
+    implements(ILogos_Footer)
 
-    meta_type = 'Logos Footer'
+    meta_type = 'Logos_Footer'
     _at_rename_after_creation = True
 
     schema = logos_schema
 
-registerType(Logosfooter, PROJECTNAME)
+registerType(Logos_Footer, PROJECTNAME)

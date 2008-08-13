@@ -7,25 +7,25 @@
 
     <!-- -*- extra stuff goes here -*- -->
 
-    <class class=".logoscontainer.Logoscontainer">
+    <class class=".Logos_Container.Logos_Container">
         <require
             permission="zope2.View"
-            interface="..interfaces.ILogoscontainer"
+            interface="..interfaces.ILogos_Container"
             />
         <require
             permission="cmf.ModifyPortalContent"
-            set_schema="..interfaces.ILogoscontainer"
+            set_schema="..interfaces.ILogos_Container"
             />
     </class>
 
-    <class class=".logosfooter.Logosfooter">
+    <class class=".Logos_Footer.Logos_Footer">
         <require
             permission="zope2.View"
-            interface="..interfaces.ILogosfooter"
+            interface="..interfaces.ILogos_Footer"
             />
         <require
             permission="cmf.ModifyPortalContent"
-            set_schema="..interfaces.ILogosfooter"
+            set_schema="..interfaces.ILogos_Footer"
             />
     </class>
 

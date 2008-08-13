@@ -4,6 +4,6 @@
 PROJECTNAME = 'upc.genweb.logosfooter'
 
 ADD_PERMISSIONS = {
-    "Logoscontainer" : "upc: Add Logo Container",
-    "Logosfooter" : "upc: Add Logo Footer",
-    }
+    'Logos_Footer': 'producto: Add Logos_Footer',
+    'Logos_Container': 'producto: Add Logos_Container',
+}
