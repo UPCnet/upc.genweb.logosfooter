@@ -14,7 +14,7 @@ def setupVarious(context):
     workflowTool = getToolByName(portal, "portal_workflow")        
         
     if not getattr(portal,'logospeu',False):
-        _createObjectByType('Logos Container', portal, 'logospeu')
+        _createObjectByType('Logos_Container', portal, 'logospeu')
         portal['logospeu'].setExcludeFromNav(True)
         portal['logospeu'].setTitle('Logos peu')
         portal['logospeu'].reindexObject()
