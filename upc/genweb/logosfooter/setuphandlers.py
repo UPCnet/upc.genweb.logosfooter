@@ -7,15 +7,17 @@ def setupVarious(context):
 
     if context.readDataFile('upc.genweb.footer_various.txt') is None:
         return
-    
-    from Products.CMFPlone.utils import _createObjectByType, getToolByName
-    portal = context.getSite()
 
-    workflowTool = getToolByName(portal, "portal_workflow")        
-        
-    if not getattr(portal,'logospeu',False):
-        _createObjectByType('Logos_Container', portal, 'logospeu')
-        portal['logospeu'].setExcludeFromNav(True)
-        portal['logospeu'].setTitle('Logos peu')
-        portal['logospeu'].reindexObject()
-        workflowTool.doActionFor(portal.logospeu, "publish")
+#    la creació de continguts s'ha centralitzat al paquet upc.genwebupc, per fer-la language-aware
+#
+#    from Products.CMFPlone.utils import _createObjectByType, getToolByName
+#    portal = context.getSite()
+#
+#    workflowTool = getToolByName(portal, "portal_workflow")        
+#        
+#    if not getattr(portal,'logospeu',False):
+#        _createObjectByType('Logos_Container', portal, 'logospeu')
+#        portal['logospeu'].setExcludeFromNav(True)
+#        portal['logospeu'].setTitle('Logos peu')
+#        portal['logospeu'].reindexObject()
+#        workflowTool.doActionFor(portal.logospeu, "publish")
