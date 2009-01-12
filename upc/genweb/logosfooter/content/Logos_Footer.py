@@ -23,8 +23,8 @@ schema = Schema((
         name='Imatge',
         widget=ImageField._properties['widget'](
             label='Imatge',
-            label_msgid='siteBanners_label_Imatge',
-            i18n_domain='siteBanners',
+            label_msgid='upc.genweb.logosfooter_label_Imatge',
+            i18n_domain='upc.genweb.logosfooter',
         ),
         storage=AttributeStorage(),
     ),
@@ -32,16 +32,17 @@ schema = Schema((
         name='URLdesti',
         widget=StringField._properties['widget'](
             label='Urldesti',
-            label_msgid='siteBanners_label_URLdesti',
-            i18n_domain='siteBanners',
+            label_msgid='upc.genweb.logosfooter_label_URLdesti',
+            description_msgid='upc.genweb.logosfooter_help_descripcion', 
+            i18n_domain='upc.genweb.logosfooter',
         ),
     ),
     BooleanField(
         name='Obrirennovafinestra',
         widget=BooleanField._properties['widget'](
             label='Obrirennovafinestra',
-            label_msgid='siteBanners_label_Obrirennovafinestra',
-            i18n_domain='siteBanners',
+            label_msgid='upc.genweb.logosfooter_label_Obrirennovafinestra',
+            i18n_domain='upc.genweb.logosfooter',
         ),
     ),
 ),

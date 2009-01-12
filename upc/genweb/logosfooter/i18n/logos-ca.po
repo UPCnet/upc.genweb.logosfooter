@@ -1,0 +1,37 @@
+# archgenxml generated POT File
+# Plone Team @ UPCnet <plone.team@upcnet.es>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: upc.genweb.logosfooter\n"
+"POT-Creation-Date: 2008-05-15 15:06+0000\n"
+"PO-Revision-Date: 2008-05-15 15:06+0000\n"
+"Last-Translator: Plone Team @ UPCnet <plone.team@upcnet.es>\n"
+"Language-Team: Plone Team @ UPCnet <plone.team@upcnet.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: ca\n"
+"Language-Name: Catala\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: upc.genweb.logosfooter\n"
+
+#. Default: "Imatge"
+#: content/Banner.py
+msgid "upc.genweb.banners_label_Imatge"
+msgstr "Logo"
+
+#. Default: "Obrirennovafinestra"
+#: content/Banner.py
+msgid "upc.genweb.logosfooter_label_Obrirennovafinestra"
+msgstr "Obrir en una nova finestra?"
+
+#. Default: "Url"
+#: content/Banner.py
+msgid "upc.genweb.logosfooter_label_URLdesti"
+msgstr "URL de destí"
+
+#. Default: "Url"
+#: content/Banner.py
+msgid "upc.genweb.logosfooter_help_descripcion"
+msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
