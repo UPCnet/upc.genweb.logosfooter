@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1'
+version = '1.2'
 
 setup(name='upc.genweb.logosfooter',
       version=version,
@@ -26,6 +26,7 @@ setup(name='upc.genweb.logosfooter',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'archetypes.configure',
       ],
       entry_points="""
       # -*- Entry points: -*-
