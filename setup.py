@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.1'
 
 setup(name='upc.genweb.logosfooter',
       version=version,
@@ -14,13 +14,13 @@ setup(name='upc.genweb.logosfooter',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
-      author='JVC',
-      author_email='plone-developers@lists.sourceforge.net',
-      url='http://svn.plone.org/svn/plone/plone.example',
+      keywords='logos genweb upc footer',
+      author='UPCnet Plone Team',
+      author_email='plone.team@upcnet.es',
+      url='http://devel.upcnet.es/svn/genwebupc',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['upc'],
+      namespace_packages=['upc', 'upc.genweb'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -29,5 +29,7 @@ setup(name='upc.genweb.logosfooter',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )

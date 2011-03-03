@@ -1,7 +1,12 @@
 Changelog
 =========
 
-0.1 - Unreleased
+1.1 (2011-02-20)
+----------------
+
+ * z3c.autoinclude aware, Plone 4 ready [sneridagh]
+
+1.0 - Unreleased
 ----------------
 
 * Initial release
