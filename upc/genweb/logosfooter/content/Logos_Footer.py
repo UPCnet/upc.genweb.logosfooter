@@ -1,19 +1,15 @@
+# -*- coding: utf-8 -*-
 """Definition of the logos footer content type.
 """
 __author__ = """José Luis Vivanco C <jose.luis.vivanco@upcnet.es>"""
 __docformat__ = 'plaintext'
 
 from zope.interface import implements
-from zope.component import adapts
-
-from Products.CMFCore.utils import getToolByName, _checkPermission
-from Products.Archetypes.interfaces import IObjectPostValidation
 
 from Products.Archetypes.atapi import *
 from AccessControl import ClassSecurityInfo
 
 from upc.genweb.logosfooter.interfaces import ILogos_Footer
-from upc.genweb.logosfooter.config import PROJECTNAME
 
 from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 
@@ -51,7 +47,6 @@ schema = Schema((
 logos_schema = BaseSchema.copy() + \
     schema.copy()
 
-
 class Logos_Footer(BaseContent, BrowserDefaultMixin):
     """
     """
@@ -62,5 +57,3 @@ class Logos_Footer(BaseContent, BrowserDefaultMixin):
     _at_rename_after_creation = True
 
     schema = logos_schema
-
-registerType(Logos_Footer, PROJECTNAME)
