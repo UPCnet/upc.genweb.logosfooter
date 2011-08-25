@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 def setupVarious(context):
 
     # Ordinarily, GenericSetup handlers check for the existence of XML files.
@@ -13,8 +16,8 @@ def setupVarious(context):
 #    from Products.CMFPlone.utils import _createObjectByType, getToolByName
 #    portal = context.getSite()
 #
-#    workflowTool = getToolByName(portal, "portal_workflow")        
-#        
+#    workflowTool = getToolByName(portal, "portal_workflow")
+#
 #    if not getattr(portal,'logospeu',False):
 #        _createObjectByType('Logos_Container', portal, 'logospeu')
 #        portal['logospeu'].setExcludeFromNav(True)

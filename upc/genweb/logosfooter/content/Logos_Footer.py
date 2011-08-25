@@ -1,13 +1,10 @@
+# -*- coding: utf-8 -*-
 """Definition of the logos footer content type.
 """
 __author__ = """José Luis Vivanco C <jose.luis.vivanco@upcnet.es>"""
 __docformat__ = 'plaintext'
 
 from zope.interface import implements
-from zope.component import adapts
-
-from Products.CMFCore.utils import getToolByName, _checkPermission
-from Products.Archetypes.interfaces import IObjectPostValidation
 
 from Products.Archetypes.atapi import *
 from AccessControl import ClassSecurityInfo
@@ -33,7 +30,7 @@ schema = Schema((
         widget=StringField._properties['widget'](
             label='Urldesti',
             label_msgid='upc.genweb.logosfooter_label_URLdesti',
-            description_msgid='upc.genweb.logosfooter_help_descripcion', 
+            description_msgid='upc.genweb.logosfooter_help_descripcion',
             i18n_domain='upc.genweb.logosfooter',
         ),
     ),
