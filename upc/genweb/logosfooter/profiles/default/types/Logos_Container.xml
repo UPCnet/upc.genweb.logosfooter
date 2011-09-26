@@ -9,7 +9,7 @@
  <property name="product">upc.genweb.logosfooter</property>
  <property name="factory">addLogos_Container</property>
  <property name="immediate_view">atct_edit</property>
- <property name="global_allow">FalseÅ</property>
+ <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
   <element value="Logos_Footer"/>
