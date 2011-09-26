@@ -35,3 +35,6 @@ msgstr "URL de destí"
 #: content/Banner.py
 msgid "upc.genweb.logosfooter_help_descripcion"
 msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
+
+msgid "Logos Footer"
+msgstr "Logo peu"
