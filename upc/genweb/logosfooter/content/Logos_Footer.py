@@ -7,6 +7,7 @@ __docformat__ = 'plaintext'
 from zope.interface import implements
 
 from Products.Archetypes.atapi import *
+from Products.ATContentTypes.content import base
 from AccessControl import ClassSecurityInfo
 
 from upc.genweb.logosfooter.interfaces import ILogos_Footer
@@ -48,8 +49,8 @@ schema = Schema((
 logos_schema = BaseSchema.copy() + \
     schema.copy()
 
-
-class Logos_Footer(BaseContent, BrowserDefaultMixin):
+# @ariel: BaseContent -> base.ATCTContent per a que agafi l'idioma per
+class Logos_Footer(base.ATCTContent, BrowserDefaultMixin):
     """
     """
     security = ClassSecurityInfo()
