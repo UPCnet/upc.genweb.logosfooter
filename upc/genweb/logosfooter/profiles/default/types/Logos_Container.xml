@@ -4,7 +4,7 @@
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title">Logos Container</property>
  <property name="description"></property>
- <property name="content_icon">++resource++logosfooter_icon.gif</property>
+ <property name="icon_expr">string:${portal_url}/++resource++logosfooter_icon.gif</property>
  <property name="content_meta_type">Logos_Container</property>
  <property name="product">upc.genweb.logosfooter</property>
  <property name="factory">addLogos_Container</property>
