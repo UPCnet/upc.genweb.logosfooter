@@ -1,4 +1,4 @@
-# Plone Team @ UPCnet <plone.team@upcnet.es>, 2007
+# Plone Team @ UPCnet <plone.team@upcnet.es>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: upc.genweb.logosfooter\n"
@@ -35,4 +35,5 @@ msgstr "URL de destino"
 msgid "upc.genweb.logosfooter_help_descripcion"
 msgstr "Empieza la URL con http:// si quieres enlazar con un elemento fuera de tu sitio web."
 
-
+msgid "Logos Footer"
+msgstr "Logotipo pie"

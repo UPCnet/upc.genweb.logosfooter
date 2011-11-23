@@ -1,5 +1,5 @@
 # archgenxml generated POT File
-# Plone Team @ UPCnet <plone.team@upcnet.es>, 2007.
+# Plone Team @ UPCnet <plone.team@upcnet.es>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: upc.genweb.logosfooter\n"
@@ -37,4 +37,4 @@ msgid "upc.genweb.logosfooter_help_descripcion"
 msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
 
 msgid "Logos Footer"
-msgstr "Logo peu"
+msgstr "Logotip peu"
