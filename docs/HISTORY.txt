@@ -1,13 +1,14 @@
 Changelog
 =========
 
+1.2 (2011-11-25)
+----------------
+* GenwebUPC 4.1 ready
+
 1.1 (2011-02-20)
 ----------------
-
- * z3c.autoinclude aware, Plone 4 ready [sneridagh]
+* z3c.autoinclude aware, Plone 4 ready [sneridagh]
 
 1.0 - Unreleased
 ----------------
-
 * Initial release
-
