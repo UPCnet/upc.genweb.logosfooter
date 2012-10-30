@@ -1,0 +1,17 @@
+<tal:logosfooter define="logos viewlet/getLogosFooter">
+<aside id="bandaLogos"
+       tal:condition="logos">
+    <div class="container">
+      <ul class="llistatLogos">
+        <li tal:repeat="logo logos">
+            <a tal:define="target python:logo.obrirEnFinestraNova and '_blank' or None"
+                 tal:attributes="href logo/URLdesti;
+                                 target target | nothing">
+                <img tal:attributes="src string:${logo/getURL}/Imatge;
+                                     alt logo/Title">
+            </a>
+        </li>
+      </ul>
+    </div>
+</aside>
+</tal:logosfooter>

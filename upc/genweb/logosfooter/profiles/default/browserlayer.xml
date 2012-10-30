@@ -1,0 +1,6 @@
+<layers>
+  <layer
+      name="GWFooterLogosInstalled"
+      interface="upc.genweb.logosfooter.interfaces.IGWFooterLogosInstalled"
+  />
+</layers>

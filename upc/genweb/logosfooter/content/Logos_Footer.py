@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""Definition of the logos footer content type.
-"""
-__author__ = """José Luis Vivanco C <jose.luis.vivanco@upcnet.es>"""
-__docformat__ = 'plaintext'
-
 from zope.interface import implements
 
 from Products.Archetypes.atapi import *
@@ -49,6 +44,7 @@ schema = Schema((
 logos_schema = BaseSchema.copy() + \
     schema.copy()
 
+
 # @ariel: BaseContent -> base.ATCTContent per a que agafi l'idioma per
 class Logos_Footer(base.ATCTContent, BrowserDefaultMixin):
     """
@@ -60,5 +56,8 @@ class Logos_Footer(base.ATCTContent, BrowserDefaultMixin):
     _at_rename_after_creation = True
 
     schema = logos_schema
+
+    def obrirEnFinestraNova(self):
+        return self.getObrirennovafinestra()
 
 registerType(Logos_Footer, PROJECTNAME)

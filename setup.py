@@ -25,6 +25,7 @@ setup(name='upc.genweb.logosfooter',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'five.grok'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

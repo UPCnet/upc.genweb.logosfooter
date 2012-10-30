@@ -5,7 +5,7 @@ Changelog
 ----------------
 * ZCML cleansing
 * Genweb 4.2 compatible
-* New HTML structure bootstrap compatible
+* New HTML structure bootstrap compatible as a viewlet
 
 1.2 (2011-11-25)
 ----------------
