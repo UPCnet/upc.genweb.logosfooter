@@ -4,6 +4,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 * ZCML cleansing
+* Genweb 4.2 compatible
+* New HTML structure bootstrap compatible
 
 1.2 (2011-11-25)
 ----------------
