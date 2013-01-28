@@ -1,6 +1,6 @@
 from five import grok
 from zope.interface import Interface
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 
 from Products.CMFCore.utils import getToolByName
 
