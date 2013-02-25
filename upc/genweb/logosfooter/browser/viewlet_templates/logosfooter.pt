@@ -1,11 +1,14 @@
 <tal:logosfooter define="logos viewlet/getLogosFooter">
 <aside id="bandaLogos"
-       tal:condition="logos">
+       tal:condition="logos" role="complementary"  aria-labelledby="titol-banda-logos">
     <div class="container">
-      <ul class="llistatLogos">
-        <li tal:repeat="logo logos">
-            <a tal:define="target python:logo.obrirEnFinestraNova and '_blank' or None"
+      <h2 class="goout" id="titol-banda-logos">Banda de d'enllacos de peu</h2>
+      <ul class="llistatLogos" role="list">
+        <li tal:repeat="logo logos" role="listitem">
+            <a rel="tooltip" data-placement="top"
+                 tal:define="target python:logo.obrirEnFinestraNova and '_blank' or None"
                  tal:attributes="href logo/URLdesti;
+                                 data-original-title logo/Title;
                                  target target | nothing">
                 <img tal:attributes="src string:${logo/getURL}/Imatge;
                                      alt logo/Title">
