@@ -8,6 +8,8 @@ from plone.app.layout.viewlets.interfaces import IPortalFooter
 
 from upc.genweb.logosfooter.interfaces import IGWFooterLogosInstalled
 
+from upc.genweb.logosfooter import logosfooterMessageFactory as _
+
 grok.context(Interface)
 
 
@@ -30,3 +32,10 @@ class logosFooterViewlet(grok.Viewlet):
                                      review_state=['published', 'intranet'],
                                      sort_on='getObjPositionInParent',
                                      sort_limit=5)[:5]
+
+    def getAltAndTitle(self, altortitle):
+        """ Funcio que extreu idioma actiu i afegeix al alt i al title de les imatges del banner
+            el literal Obriu l'enllac en una finestra nova.
+        """
+        return '%s, %s' % (altortitle.decode('utf-8'),
+            self.portal().translate(_('obrir_link_finestra_nova', default=u"(obriu en una finestra nova)")))

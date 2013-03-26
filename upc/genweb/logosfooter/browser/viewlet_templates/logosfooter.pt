@@ -6,12 +6,18 @@
       <ul class="llistatLogos" role="list">
         <li tal:repeat="logo logos" role="listitem">
             <a rel="tooltip" data-placement="top"
-                 tal:define="target python:logo.obrirEnFinestraNova and '_blank' or None"
-                 tal:attributes="href logo/URLdesti;
+               tal:define="target python:logo.obrirEnFinestraNova and '_blank' or None"
+               tal:attributes="href logo/URLdesti | nothing;
                                  data-original-title logo/Title;
                                  target target | nothing">
-                <img tal:attributes="src string:${logo/getURL}/Imatge;
-                                     alt logo/Title">
+                <img tal:condition="logo/obrirEnFinestraNova"
+                     tal:attributes="src string:${logo/getURL}/Imatge;
+                                     alt python:viewlet.getAltAndTitle(logo.Title);
+                                     title python:viewlet.getAltAndTitle(logo.Title)">
+                <img tal:condition="not: logo/obrirEnFinestraNova"
+                     tal:attributes="src string:${logo/getURL}/Imatge;
+                                     alt logo/Title;
+                                     title logo/Title">
             </a>
         </li>
       </ul>
